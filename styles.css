@@ -1,49 +1,91 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
-    padding: 20px;
 }
 
-.container {
-    max-width: 800px;
-    margin: auto;
-    text-align: center;
+header {
+    background-color: #333;
+    color: white;
 }
 
-input[type="text"] {
-    width: calc(100% - 20px);
-    padding: 10px;
-    margin-bottom: 20px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-}
-
-.globe {
-    width: 100%;
-    height: 400px; /* Adjust height as needed */
-}
-
-#profiles-container {
-    margin-top: 20px;
-}
-
-#profiles {
+nav {
     display: flex;
-    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+}
+
+.nav-links {
+    list-style: none;
+}
+
+.nav-links li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.menu-toggle {
+    display: none; /* Hidden by default */
+}
+
+.hero {
+    background-image: url('your-image-url.jpg'); /* Replace with your image */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+    color: white;
 }
 
-.profile-card {
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-    margin: 10px;
-    padding: 10px;
+.cta-button {
+    background-color: #ff5722; /* Call-to-action button color */
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
 }
 
-.profile-card img {
-    width: 100px; /* Adjust size as needed */
-    height: auto;
-    border-radius: 50%;
+.about, .services, .contact {
+   padding: 50px 20px; 
+   text-align: center; 
+}
+
+.service-card {
+   background-color: #f4f4f4; 
+   margin-top: 20px; 
+   padding: 20px; 
+   border-radius: 10px; 
+   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+   .nav-links {
+       display: none; /* Hide links on mobile */
+       flex-direction: column; 
+       position: absolute; 
+       top: 60px; 
+       right: 0; 
+       background-color: #333; 
+       width: 100%; 
+   }
+
+   .nav-links.active {
+       display: flex; /* Show links when active */
+   }
+
+   .menu-toggle {
+       display: block; /* Show menu toggle on mobile */
+   }
 }
