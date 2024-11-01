@@ -22,8 +22,6 @@ input[type="text"] {
 .globe {
     width: 100%;
     height: 400px; /* Adjust height as needed */
-    border-radius: 50%;
-    margin-bottom: 20px;
 }
 
 #profiles-container {
@@ -42,7 +40,6 @@ input[type="text"] {
     box-shadow: 0 2px 5px rgba(0,0,0,0.2);
     margin: 10px;
     padding: 10px;
-    text-align: center;
 }
 
 .profile-card img {
