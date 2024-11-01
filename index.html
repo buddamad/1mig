@@ -3,20 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Interactive Globe with Instagram Profiles</title>
+    <title>1 Million Instagram Profiles</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
+    <header>
+        <nav>
+            <div class="logo">1MillionIG</div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero">
         <h1>Explore 1 Million Instagram Profiles</h1>
-        <input type="text" id="search" placeholder="Search profiles..." autocomplete="off">
-        <div id="globe" class="globe"></div>
-        <div id="profiles-container">
-            <h2>Profiles</h2>
-            <div id="profiles"></div>
+        <p>Your journey to discover starts here.</p>
+        <a href="#services" class="cta-button">Get Started</a>
+    </section>
+
+    <section id="about" class="about">
+        <h2>About Us</h2>
+        <p>We provide a platform to explore and connect with millions of Instagram profiles.</p>
+    </section>
+
+    <section id="services" class="services">
+        <h2>Our Services</h2>
+        <div class="service-card">
+            <h3>Profile Discovery</h3>
+            <p>Find profiles that match your interests.</p>
         </div>
-    </div>
+        <div class="service-card">
+            <h3>Collaboration Opportunities</h3>
+            <p>Connect with influencers and brands.</p>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <form id="contact-form">
+            <input type="text" placeholder="Your Name" required />
+            <input type="email" placeholder="Your Email" required />
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 1 Million Instagram Profiles. All rights reserved.</p>
+    </footer>
 
     <script src="script.js"></script>
 </body>
